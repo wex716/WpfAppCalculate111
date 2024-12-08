@@ -21,11 +21,27 @@
         <TextBox Name="ButtonReadyAnswer" HorizontalAlignment="Left" Margin="423,0,0,0" TextWrapping="Wrap" Text=""
                  VerticalAlignment="Center" Width="120" Height="28" />
 
-        <Button  Content="Проверить пример" HorizontalAlignment="Center" Margin="0,287,0,0" VerticalAlignment="Top"
+        <Button Content="Проверить пример" HorizontalAlignment="Center" Margin="0,287,0,0" VerticalAlignment="Top"
                 Width="172" Height="49" Click="ButtonReadyAnswerTextBox" FontSize="14" />
 
         <Button Content="Очистить поле &quot;Ответ&quot;" HorizontalAlignment="Left" Margin="502,287,0,0"
                 VerticalAlignment="Top" Width="172" Height="49" Click="ButtonClickClearLabelAnswer" FontSize="14" />
+
+        <ComboBox x:Name="operationComboBox" HorizontalAlignment="Center" Width="120" Margin="-500,90,0,0"
+                  VerticalAlignment="Top" SelectionChanged="operationComboBox_SelectionChanged">
+            <ComboBoxItem Content="+" />
+            <ComboBoxItem Content="-" />
+            <ComboBoxItem Content="*" />
+            <ComboBoxItem Content="/" />
+        </ComboBox>
+
+
+        <ComboBox x:Name="rangeComboBox" HorizontalAlignment="Center" Width="120" Margin="480,90,0,0"
+                  VerticalAlignment="Top" SelectionChanged="rangeComboBox_SelectionChanged">
+            <ComboBoxItem Content="1 - 10" />
+            <ComboBoxItem Content="1 - 100" />
+            <ComboBoxItem Content="1 - 1000" />
+        </ComboBox>
 
     </Grid>
 </Window>
